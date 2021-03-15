@@ -7,3 +7,21 @@
 #Url para descargar Apache Jena Fuseki
 https://downloads.apache.org/jena/binaries/apache-jena-fuseki-3.17.0.zip
 ```
+
+#### 1.1 Modificar el archivo shiro.ini
+```bash
+#Path
+Cd: Fuseki/run/shiro.ini
+
+#Copiar y pegar en la linea basic authentication user/password
+/$/** = authcBasic,user[admin]
+```
+#### 2. Ejecutar Apache Jena Fuseki y cargar el archivo OntologíaBiblioteca.owl
+```bash
+#Comando Cmd
+  cd C:\Fuseki> .\fuseki-server --update --mem /ds
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/CarlosOrtiz9901/SIG2/main/Public/img1.jpeg" width="700" alt="img" />
+</p>
