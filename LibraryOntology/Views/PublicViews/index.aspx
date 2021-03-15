@@ -4,1679 +4,678 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Directing Template"/>
-    <meta name="keywords" content="Directing, unica, creative, html/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Library+</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css"/>
-    <link rel="stylesheet" href="css/flaticon.css" type="text/css"/>
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css"/>
-    <link rel="stylesheet" href="css/barfiller.css" type="text/css"/>
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"/>
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>Bibloteca Plus</title>
+    <meta name="keywords" content="libro, biblioteca, actor, literatura, genero" />
+    <meta name="description" content="pagina para comprar libros best sellers, con contenido académico, de comercio electrónico que son excelentes alternativas debido a que te ofrecen una gran variedad semanticamente" />
+    <meta name="author" content="CARLOS Y LIZETH" />
+    <meta name="coypiright" content="BiblotecaPlus INC" />
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
+
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+    <form id="form1" runat="server">
+        <!-- HEADER -->
+        <header id="main-header" itemscope="itemscope" itemtype="http://schema.org/LocalBusiness" itemref="main-header name_id _image1 _image2 _image3 _image4 _image5 _image6  _telephone1 _email1  _postalCode3 _postalCode1 _address1">
+            <!-- TOP HEADER -->
+            <div id="top-header">
+                <div class="container" >
+                    <ul class="header-links pull-left">
+                        <li><a href="#"><i class="fa fa-phone"></i><span >+57 313-301-1867</span></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i><span >biblotecaplus@email.com</span></a></li>
+                        <li><a href="#"><i class="fa fa-map-marker"></i><span >18001</span> Florencia Caquetá <span >(Colombia)</span></a></li>
+                    </ul>
+                    <ul class="header-links pull-right">
+                        <li><a href="#">
+                            <h6 id="name_id" itemprop="name">Bibloteca Plus</h6>
+                        </a></li>
+                        <li><a href="#"><i class="fa fa-user-o"></i>Mi Cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /TOP HEADER -->
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a style="margin-left:15px" href="./index.html">
-                            <img src="img/logo3.png" alt="Logo" width="35"/>
-                            <img src="img/TituloB.png" alt="Logo2" width="150"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="header__nav">
-                        <nav class="header__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Inicio</a></li>
-                                <li><a href="#">Categorías</a></li>
-                                <li><a href="./blog.html">Autor</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__menu__right">
-                            <a href="#" class="primary-btn"><i class="fa fa-plus"></i>Add Listing</a>
-                            <a href="#" class="login-btn"><i class="fa fa-user"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
-    </header>
-    <!-- Header Section End -->
-
-    <!-- Hero Section Begin -->
-    <section class="hero set-bg" data-setbg="img/libroFondo.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hero__text">
-                        <div class="section-title">
-                            <h2 style="-webkit-text-fill-color: aliceblue; -webkit-text-stroke: 1px black;">Descubra los mejores libros</h2>
-                           <!-- <p style="-webkit-text-fill-color: black; -webkit-text-stroke: 1px black; font-size:15px" >El mejor paquete de servicios te está esperando</p>-->
-                        </div>
-                        <div class="hero__search__form">
-                            <form action="#">
-                                <input type="text" style="width: 555px;" placeholder="Buscar..."/>
-                                <div class="select__option">
-                                    <select>
-                                        <option value="">Elige categorías</option>
-                                    </select>
-                                </div>
-                                <button type="submit">Buscar</button>
-                            </form>
-                        </div>
-                        <ul class="hero__categories__tags">
-                            <li><a href="#"><img src="img/hero/cat-1.png" alt=""> Acción</a></li>
-                            <li><a href="#"><img src="img/hero/cat-2.png" alt=""> Food & Drink</a></li>
-                            <li><a href="#"><img src="img/hero/cat-3.png" alt=""> Shopping</a></li>
-                            <li><a href="#"><img src="img/hero/cat-4.png" alt=""> Beauty</a></li>
-                            <li><a href="#"><img src="img/hero/cat-5.png" alt=""> Hotels</a></li>
-                            <li><a href="#"><img src="img/hero/cat-6.png" alt=""> All Categories</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Categories Section Begin -->
-    <section class="categories spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Most Popular Categories</h2>
-                        <p>Travelocity empowers travelers who are giving back on their trips in ways big and small</p>
-                    </div>
-                    <div class="categories__item__list">
-                        <div class="categories__item">
-                            <img src="img/categories/cat-1.png" alt="">
-                            <h5>Food & Drink</h5>
-                            <span>78 Listings</span>
-                        </div>
-                        <div class="categories__item">
-                            <img src="img/categories/cat-2.png" alt="">
-                            <h5>Restaurent</h5>
-                            <span>32 Listings</span>
-                        </div>
-                        <div class="categories__item">
-                            <img src="img/categories/cat-3.png" alt="">
-                            <h5>Hotels</h5>
-                            <span>16 Listings</span>
-                        </div>
-                        <div class="categories__item">
-                            <img src="img/categories/cat-4.png" alt="">
-                            <h5>Beauty & Spa</h5>
-                            <span>55 Listings</span>
-                        </div>
-                        <div class="categories__item">
-                            <img src="img/categories/cat-5.png" alt="">
-                            <h5>Shopping</h5>
-                            <span>23 Listings</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Categories Section End -->
-
-    <!-- Most Search Section Begin -->
-    <section class="most-search spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>The Most Searched Services</h2>
-                        <p>Travelocity empowers travelers who are giving back on their trips in ways big and small</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="most__search__tab">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
-                                    <span class="flaticon-039-fork"></span>
-                                    Restaurent
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
-                                    <span class="flaticon-030-kebab"></span>
-                                    Shopping
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
-                                    <span class="flaticon-032-food-truck"></span>
-                                    Travel
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
-                                    <span class="flaticon-017-croissant"></span>
-                                    Beauty
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">
-                                    <span class="flaticon-038-take-away"></span>
-                                    Event
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">
-                                    <span class="flaticon-031-delivery"></span>
-                                    Rental
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-1.jpg">
-                                            <img src="img/listing/list_icon-1.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Chinese Sausage Restaurant</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-2.jpg">
-                                            <img src="img/listing/list_icon-2.png" alt="">
-                                            <div class="listing__item__pic__tag top_rate">Top Rate</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Shrimp floured and fried</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 1012 Vesper Dr. Columbus,
-                                                        Georgia(GA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-2.png" alt="">
-                                                    <span>Food & Drink</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-3.jpg">
-                                            <img src="img/listing/list_icon-3.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Sweet and sour pork ribs</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 251 Wiley St. Forks,
-                                                        Washington(WA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-4.jpg">
-                                            <img src="img/listing/list_icon-4.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Crab fried with tamarind</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 14320 Keenes Mill Rd.
-                                                        Cottondale, Alabama(AL), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-5.jpg">
-                                            <img src="img/listing/list_icon-5.png" alt="">
-                                            <div class="listing__item__pic__tag hot_deal">Hot Deal</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Tortoise grilled on salt</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-4.png" alt="">
-                                                    <span>Shopping</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-6.jpg">
-                                            <img src="img/listing/list_icon-6.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Fish cooked with fishsauce</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 2604 E Drachman St. Tucson,
-                                                        Arizona, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tabs-2" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-1.jpg">
-                                            <img src="img/listing/list_icon-1.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Chinese Sausage Restaurant</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-2.jpg">
-                                            <img src="img/listing/list_icon-2.png" alt="">
-                                            <div class="listing__item__pic__tag top_rate">Top Rate</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Shrimp floured and fried</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 1012 Vesper Dr. Columbus,
-                                                        Georgia(GA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-2.png" alt="">
-                                                    <span>Food & Drink</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-3.jpg">
-                                            <img src="img/listing/list_icon-3.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Sweet and sour pork ribs</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 251 Wiley St. Forks,
-                                                        Washington(WA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-4.jpg">
-                                            <img src="img/listing/list_icon-4.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Crab fried with tamarind</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 14320 Keenes Mill Rd.
-                                                        Cottondale, Alabama(AL), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-5.jpg">
-                                            <img src="img/listing/list_icon-5.png" alt="">
-                                            <div class="listing__item__pic__tag hot_deal">Hot Deal</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Tortoise grilled on salt</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-4.png" alt="">
-                                                    <span>Shopping</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tabs-3" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-3.jpg">
-                                            <img src="img/listing/list_icon-3.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Sweet and sour pork ribs</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 251 Wiley St. Forks,
-                                                        Washington(WA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-4.jpg">
-                                            <img src="img/listing/list_icon-4.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Crab fried with tamarind</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 14320 Keenes Mill Rd.
-                                                        Cottondale, Alabama(AL), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-5.jpg">
-                                            <img src="img/listing/list_icon-5.png" alt="">
-                                            <div class="listing__item__pic__tag hot_deal">Hot Deal</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Tortoise grilled on salt</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-4.png" alt="">
-                                                    <span>Shopping</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-6.jpg">
-                                            <img src="img/listing/list_icon-6.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Fish cooked with fishsauce</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 2604 E Drachman St. Tucson,
-                                                        Arizona, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tabs-4" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-1.jpg">
-                                            <img src="img/listing/list_icon-1.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Chinese Sausage Restaurant</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-2.jpg">
-                                            <img src="img/listing/list_icon-2.png" alt="">
-                                            <div class="listing__item__pic__tag top_rate">Top Rate</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Shrimp floured and fried</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 1012 Vesper Dr. Columbus,
-                                                        Georgia(GA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-2.png" alt="">
-                                                    <span>Food & Drink</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-3.jpg">
-                                            <img src="img/listing/list_icon-3.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Sweet and sour pork ribs</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 251 Wiley St. Forks,
-                                                        Washington(WA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-6.jpg">
-                                            <img src="img/listing/list_icon-6.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Fish cooked with fishsauce</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 2604 E Drachman St. Tucson,
-                                                        Arizona, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tabs-5" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-1.jpg">
-                                            <img src="img/listing/list_icon-1.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Chinese Sausage Restaurant</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-2.jpg">
-                                            <img src="img/listing/list_icon-2.png" alt="">
-                                            <div class="listing__item__pic__tag top_rate">Top Rate</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Shrimp floured and fried</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 1012 Vesper Dr. Columbus,
-                                                        Georgia(GA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-2.png" alt="">
-                                                    <span>Food & Drink</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-3.jpg">
-                                            <img src="img/listing/list_icon-3.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Sweet and sour pork ribs</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 251 Wiley St. Forks,
-                                                        Washington(WA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-4.jpg">
-                                            <img src="img/listing/list_icon-4.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Crab fried with tamarind</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 14320 Keenes Mill Rd.
-                                                        Cottondale, Alabama(AL), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-6.jpg">
-                                            <img src="img/listing/list_icon-6.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Fish cooked with fishsauce</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 2604 E Drachman St. Tucson,
-                                                        Arizona, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tabs-6" role="tabpanel">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-1.jpg">
-                                            <img src="img/listing/list_icon-1.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Chinese Sausage Restaurant</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-2.jpg">
-                                            <img src="img/listing/list_icon-2.png" alt="">
-                                            <div class="listing__item__pic__tag top_rate">Top Rate</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Shrimp floured and fried</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 1012 Vesper Dr. Columbus,
-                                                        Georgia(GA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-2.png" alt="">
-                                                    <span>Food & Drink</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-4.jpg">
-                                            <img src="img/listing/list_icon-4.png" alt="">
-                                            <div class="listing__item__pic__tag">Popular</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Crab fried with tamarind</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 14320 Keenes Mill Rd.
-                                                        Cottondale, Alabama(AL), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-3.png" alt="">
-                                                    <span>Hotel</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right closed">Closed</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="listing__item">
-                                        <div class="listing__item__pic set-bg" data-setbg="img/listing/list-5.jpg">
-                                            <img src="img/listing/list_icon-5.png" alt="">
-                                            <div class="listing__item__pic__tag hot_deal">Hot Deal</div>
-                                            <div class="listing__item__pic__btns">
-                                                <a href="#"><span class="icon_zoom-in_alt"></span></a>
-                                                <a href="#"><span class="icon_heart_alt"></span></a>
-                                            </div>
-                                        </div>
-                                        <div class="listing__item__text">
-                                            <div class="listing__item__text__inside">
-                                                <h5>Tortoise grilled on salt</h5>
-                                                <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
-                                                </div>
-                                                <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
-                                                </ul>
-                                            </div>
-                                            <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-4.png" alt="">
-                                                    <span>Shopping</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Most Search Section End -->
-
-    <!-- Work Section Begin -->
-    <section class="work spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>How Does It Work</h2>
-                        <p>Travelocity empowers travelers who are giving back on their trips in ways big and small</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="work__item">
-                        <div class="work__item__number">01.</div>
-                        <img src="img/work/work-1.png" alt="">
-                        <h5>Location & Categories</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="work__item">
-                        <div class="work__item__number">02.</div>
-                        <img src="img/work/work-2.png" alt="">
-                        <h5>Explore Listting</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="work__item">
-                        <div class="work__item__number">03.</div>
-                        <img src="img/work/work-3.png" alt="">
-                        <h5>Making Appointments</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Work Section End -->
-
-    <!-- Feature Location Section Begin -->
-    <section class="feature-location spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Top Featured Locations</h2>
-                        <p>Explore restaurants, bars, and cafés by locality</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <a href="#" class="feature__location__item large-item set-bg"
-                        data-setbg="img/feature-location/fl-1.jpg">
-                        <div class="feature__location__item__text">
-                            <h5>Washington, D.C</h5>
-                            <ul>
-                                <li>2045 Listings</li>
-                                <li>3648 Users</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6">
+            <!-- MAIN HEADER -->
+            <div id="header">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
                     <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <a href="#" class="feature__location__item set-bg"
-                                data-setbg="img/feature-location/fl-2.jpg">
-                                <div class="feature__location__item__text">
-                                    <h5>Chicago</h5>
-                                </div>
-                            </a>
+                        <!-- LOGO -->
+                        <div class="col-md-3">
+                            <div class="header-logo">
+                                <a href="#" class="logo">
+                                    <img src="img2/Logo1.png" alt="Logo" itemprop="image" id="_image1" width="50" />
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <a href="#" class="feature__location__item set-bg"
-                                data-setbg="img/feature-location/fl-3.jpg">
-                                <div class="feature__location__item__text">
-                                    <h5>San Antonio</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <a href="#" class="feature__location__item set-bg" data-setbg="img/feature-location/fl-4.jpg">
-                        <div class="feature__location__item__text">
-                            <h5>Los Angeles</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Feature Location Section End -->
+                        <!-- /LOGO -->
 
-    <!-- Testimonial Section Begin -->
-    <section class="testimonial spad set-bg" data-setbg="img/testimonial/testimonial-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Trusted By Over 5000+ User</h2>
-                        <p>What people say about us</p>
-                    </div>
-                    <div class="testimonial__slider owl-carousel">
-                        <div class="testimonial__item" data-hash="review-1">
-                            <p>" We worked with Consultant. Our representative was very knowledgeable and helpful.
-                                Consultant made a number of suggestions to help improve our systems. Consultant
-                                explained how things work and why it would help."</p>
-                            <div class="testimonial__item__author">
-                                <a href="#review-3"><img src="img/testimonial/author-3.png" alt=""></a>
-                                <a href="#review-1" class="active"><img src="img/testimonial/author-1.png" alt=""></a>
-                                <a href="#review-2"><img src="img/testimonial/author-2.png" alt=""></a>
-                            </div>
-                            <div class="testimonial__item__author__text">
-                                <h5>John Smith -</h5>
-                                <div class="testimonial__item__author__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                        <!-- SEARCH BAR -->
+                        <div class="col-md-6" style="height: 70px;">
+                            <div class="header-search">
+                                <div>
+                                    <asp:DropDownList ID="DDL_PROPERTY" runat="server" CssClass="input-select" AppendDataBoundItems="true" Style="margin-right: -4px; border-radius: 40px 0px 0px 40px; height: 32px; width: 33%;">
+                                        <asp:ListItem Selected="True" Value="Propiedad">Propiedad</asp:ListItem>
+                                        <asp:ListItem Selected="false" Value="Nombre">Nombre</asp:ListItem>
+                                        <asp:ListItem Selected="false" Value="Tipo">Género literario</asp:ListItem>
+                                        <asp:ListItem Selected="false" Value="Sipnosis">Sinopsis</asp:ListItem>
+                                    </asp:DropDownList>
+
+                                    <asp:TextBox CssClass="input" runat="server" ID="TB_BOOK" Style="width: calc(100% - 40%); margin-right: -4px; height: 32px; width: 40%;" placeholder="Busca un libro en específico..." />
+                                    <asp:Button runat="server" CssClass="search-btn" ID="BTN_SEARCH" OnClick="BTN_SEARCH_CLICK" Style="height: 40px; width: 100px; background: #D10024; color: #FFF; font-weight: 700; border: none; border-radius: 0px 40px 40px 0px; height: 32px;" Text="Buscar"></asp:Button>
                                 </div>
                             </div>
-                            <span>CEO Colorlib</span>
                         </div>
-                        <div class="testimonial__item" data-hash="review-2">
-                            <p>" We worked with Consultant. Our representative was very knowledgeable and helpful.
-                                Consultant made a number of suggestions to help improve our systems. Consultant
-                                explained how things work and why it would help."</p>
-                            <div class="testimonial__item__author">
-                                <a href="#review-1"><img src="img/testimonial/author-1.png" alt=""></a>
-                                <a href="#review-2" class="active"><img src="img/testimonial/author-2.png" alt=""></a>
-                                <a href="#review-3"><img src="img/testimonial/author-3.png" alt=""></a>
+                        <!-- /SEARCH BAR -->
+
+                        <!-- ACCOUNT -->
+                        <div class="col-md-3 clearfix">
+                            <div class="header-ctn">
+                                <!-- Wishlist -->
+                                <div>
+                                    <a href="#">
+                                        <i class="fa fa-heart-o"></i>
+                                        <span>Lista de deseos</span>
+                                        <div class="qty">2</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span>Tu carrito</span>
+                                        <div class="qty">3</div>
+                                    </a>
+                                </div>
+                                <!-- /Wishlist -->
+
+                                <!-- Cart -->
+                                <%--  <div class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span>Tu carrito</span>
+                                        <div class="qty">3</div>
+                                    </a>
+                                    <div class="cart-dropdown">
+                                        <div class="cart-list">
+                                            <div class="product-widget">
+                                                <div class="product-img">
+                                                    <img src="./img/product01.png" alt="_2" itemprop="image" id="_image2" />
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                    <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+                                                </div>
+                                                <button class="delete"><i class="fa fa-close"></i></button>
+                                            </div>
+
+                                            <div class="product-widget">
+                                                <div class="product-img">
+                                                    <img src="./img/product02.png" alt="_3" itemprop="image" id="_image3" />
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                    <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+                                                </div>
+                                                <button class="delete"><i class="fa fa-close"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-summary">
+                                            <small>3 Item(s) selected</small>
+                                            <h5>SUBTOTAL: $2940.00</h5>
+                                        </div>
+                                        <div class="cart-btns">
+                                            <a href="#">View Cart</a>
+                                            <a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>--%>
+                                <!-- /Cart -->
+
+                                <!-- Menu Toogle -->
+                                <%--    <div class="menu-toggle">
+                                    <a href="#">
+                                        <i class="fa fa-bars"></i>
+                                        <span>Menu</span>
+                                    </a>
+                                </div>--%>
+                                <!-- /Menu Toogle -->
                             </div>
-                            <div class="testimonial__item__author__text">
-                                <h5>John Smith -</h5>
-                                <div class="testimonial__item__author__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                        </div>
+                        <!-- /ACCOUNT -->
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- /MAIN HEADER -->
+        </header>
+        <!-- /HEADER -->
+
+        <!-- NAVIGATION -->
+        <%-- <nav id="navigation">
+            <!-- container -->
+            <div class="container">
+                <!-- responsive-nav -->
+                <div id="responsive-nav">
+                    <!-- NAV -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Hot Deals</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                    <!-- /NAV -->
+                </div>
+                <!-- /responsive-nav -->
+            </div>
+            <!-- /container -->
+        </nav>--%>
+        <!-- /NAVIGATION -->
+
+        <!-- SECTION -->
+        <div class="section">
+            <!-- container -->
+            <div class="container" id="autor_main" itemtype="http://schema.org/Library" itemref="autor_main name">
+                <!-- row -->
+                <div class="row" vocab="https://schema.org/" typeof="Library">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">Autores Destacados</h3>
+                        </div>
+                    </div>
+                    <asp:ScriptManager runat="server"></asp:ScriptManager>
+                    <asp:Repeater ID="Rep_Aurhor_Three" runat="server">
+                        <ItemTemplate>
+
+                            <div class="col-md-4 col-xs-6">
+                                <div class="shop" style="height: 270px;">
+                                    <div class="shop-img">
+                                        <figure>
+                                            <a href='<%# Eval("Imagen") %>' data-fancybox="images">
+                                                <asp:Image runat="server" ImageUrl='<%# Eval("Imagen") %>' itemprop="image" Style="width: 100%;" />
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="shop-body">
+                                        <h5 style="color: #FFF" itemprop="name">AUTOR<br />
+                                            <%# Eval("Nombre") %></h5>
+                                        <a href="#" class="cta-btn">Leer más <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                            <span>CEO Colorlib</span>
+
+                        </ItemTemplate>
+                    </asp:Repeater>
+
+                    <!-- /shop -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /SECTION -->
+
+        <!-- SECTION -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+                    <!-- section title -->
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">Nuevos Libros</h3>
                         </div>
-                        <div class="testimonial__item" data-hash="review-3">
-                            <p>" We worked with Consultant. Our representative was very knowledgeable and helpful.
-                                Consultant made a number of suggestions to help improve our systems. Consultant
-                                explained how things work and why it would help."</p>
-                            <div class="testimonial__item__author">
-                                <a href="#review-2"><img src="img/testimonial/author-2.png" alt=""></a>
-                                <a href="#review-3" class="active"><img src="img/testimonial/author-3.png" alt=""></a>
-                                <a href="#review-1"><img src="img/testimonial/author-1.png" alt=""></a>
-                            </div>
-                            <div class="testimonial__item__author__text">
-                                <h5>John Smith -</h5>
-                                <div class="testimonial__item__author__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                    </div>
+                    <!-- /section title -->
+
+                    <!-- Products tab & slick -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="products-tabs">
+                                <!-- tab -->
+                                <div id="tab1" class="tab-pane active" itemscope="itemscope" itemtype="http://schema.org/Library" itemref="tab1 _literarygenre _name _pages _ratingValue">
+                                    <div class="products-slick" data-nav="#slick-nav-1" vocab="https://schema.org/" typeof="Library">
+
+                                        <asp:Repeater ID="Rep_Books" runat="server">
+                                            <ItemTemplate>
+
+                                                <div class="product">
+                                                    <div class="product-img">
+                                                        <asp:Image runat="server" ImageUrl='<%# Eval("Imagen") %>' itemprop="image" Style="width: 100%;" />
+                                                        <div class="product-label">
+                                                            <span class="new">NUEVO</span>
+                                                            <%--<span class="sale">-30%</span>--%>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-body">
+                                                        <p class="product-category" id="_literarygenre" itemprop="literarygenre"><%# Eval("Tipo") %></p>
+                                                        <h3 class="product-name" id="_name" itemprop="name"><a href="#"><%# Eval("Nombre") %></a></h3>
+                                                        <h4 class="product-price" id="_pages" itemprop="pages">Páginas: <del class="product-old-price" style="text-decoration: none;"><%# Eval("Paginas").ToString().Split('^')[0] %></del></h4>
+                                                        <div class="product-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <div><span id="_ratingValue" itemprop="ratingValue"><%# Eval("Puntuacion").ToString().Split('^')[0] %></span></div>
+                                                        <div class="product-btns">
+                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">añadir lista deseos</span></button>
+                                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Añadir al carrito</button>
+                                                    </div>
+                                                </div>
+
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+
+                                    </div>
+                                    <div id="slick-nav-1" class="products-slick-nav"></div>
                                 </div>
+                                <!-- /tab -->
                             </div>
-                            <span>CEO Colorlib</span>
                         </div>
                     </div>
+                    <!-- Products tab & slick -->
                 </div>
+                <!-- /row -->
             </div>
+            <!-- /container -->
         </div>
-    </section>
-    <!-- Testimonial Section End -->
+        <!-- /SECTION -->
 
-    <!-- Blog Section Begin -->
-    <section class="news-post spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>News Post</h2>
-                        <p>Checkout Latest News And Articles From Our Blog</p>
+        <!-- HOT DEAL SECTION -->
+        <div id="hot-deal" class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row" style="text-transform: none;">
+                    <div class="col-md-12">
+                        <div class="hot-deal">
+                            <ul class="hot-deal-countdown">
+                                <li>
+                                    <div>
+                                        <h3>02</h3>
+                                        <span>Days</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>10</h3>
+                                        <span>Hours</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>34</h3>
+                                        <span>Mins</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>60</h3>
+                                        <span>Secs</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div>
+                                <h2 itemprop="ratingValue">LIBRO MEJOR CALIFICADO CON <%=BEST_BOOK_SCORE %></h2>
+                                <p itemprop="name"><%=BEST_BOOK_NAME %></p>
+                            </div>
+                            <div class="product-img">
+                                <img src='<%=BEST_BOOK_URL %>' alt='_best_book' itemprop="image" id="_image_4" style="width: 10%;" />
+                            </div>
+                            <a class="primary-btn cta-btn" href="#">COMPRAR AHORA</a>
+                        </div>
                     </div>
                 </div>
+                <!-- /row -->
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg">
-                            <a href="https://www.youtube.com/watch?v=8EJ3zbKTWQ8" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                        </div>
-                        <div class="blog__item__text">
-                            <ul class="blog__item__tags">
-                                <li><i class="fa fa-tags"></i> Travel</li>
-                                <li>Videos</li>
-                            </ul>
-                            <h5><a href="#">Internet Banner Advertising Most Reliable</a></h5>
-                            <ul class="blog__item__widget">
-                                <li><i class="fa fa-clock-o"></i> 19th March, 2019</li>
-                                <li><i class="fa fa-user"></i> John Smith</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
-                        <div class="blog__item__text">
-                            <ul class="blog__item__tags">
-                                <li><i class="fa fa-tags"></i> Travel</li>
-                                <li>Restaurant</li>
-                            </ul>
-                            <h5><a href="#">Internet Banner Advertising Most Reliable</a></h5>
-                            <ul class="blog__item__widget">
-                                <li><i class="fa fa-clock-o"></i> 19th March, 2019</li>
-                                <li><i class="fa fa-user"></i> John Smith</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
-                        <div class="blog__item__text">
-                            <ul class="blog__item__tags">
-                                <li><i class="fa fa-tags"></i> Travel</li>
-                                <li>Restaurant</li>
-                            </ul>
-                            <h5><a href="#">Internet Banner Advertising Most Reliable</a></h5>
-                            <ul class="blog__item__widget">
-                                <li><i class="fa fa-clock-o"></i> 19th March, 2019</li>
-                                <li><i class="fa fa-user"></i> John Smith</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- /container -->
         </div>
-    </section>
-    <!-- Blog Section End -->
+        <!-- /HOT DEAL SECTION -->
 
-    <!-- Newslatter Section Begin -->
-    <section class="newslatter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="newslatter__text">
-                        <h3>Suscribirse al boletín informativo</h3>
-                        <p>Suscríbete a nuestro boletin informativo y no te pierdas nada</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <form action="#" class="newslatter__form">
-                        <input type="text" placeholder="Tu correo electrónico"/>
-                        <button type="submit">Suscribir</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Newslatter Section End -->
+        <!-- SECTION -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer__about">
-                        <div class="footer__about__logo">
-                            <a href="./index.html">
-                                 <img src="img/logo3.png" alt="Logo" width="35"/>
-                            <img src="img/TextLogo.png" alt="Logo2" width="150"/>
-                            </a>
+                    <!-- section title -->
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">MÁS VENDIDOS</h3>
                         </div>
-                        <p>Desafiar la forma en que siempre se han hecho las cosas puede conducir a nuevas opciones creativas que recompensen
-                            usted.</p>
                     </div>
+                    <!-- /section title -->
+
+                    <!-- Products tab & slick -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="products-tabs">
+                                <!-- tab -->
+                                <div id="tab2" class="tab-pane fade in active">
+                                    <div class="products-slick" data-nav="#slick-nav-2">
+                                        <asp:Repeater ID="Rep_Best_Sellers" runat="server">
+                                            <ItemTemplate>
+
+                                                <div class="product">
+                                                    <div class="product-img">
+                                                        <asp:Image runat="server" ImageUrl='<%# Eval("Imagen") %>' itemprop="image" Style="width: 100%;" />
+                                                        <div class="product-label">
+                                                            <%--<span class="new">NUEVO</span>--%>
+                                                            <%--<span class="sale">-30%</span>--%>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-body">
+                                                        <p class="product-category" itemprop="literarygenre"><%# Eval("Tipo") %></p>
+                                                        <h3 class="product-name" itemprop="name"><a href="#"><%# Eval("Nombre") %></a></h3>
+                                                        <h4 class="product-price" itemprop="pages">Páginas: <del class="product-old-price" style="text-decoration: none;"><%# Eval("Paginas").ToString().Split('^')[0] %></del></h4>
+                                                        <div class="product-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <div><span itemprop="ratingValue"><%# Eval("Puntuacion").ToString().Split('^')[0] %></span></div>
+                                                        <div class="product-btns">
+                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">añadir lista deseos</span></button>
+                                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Añadir al carrito</button>
+                                                    </div>
+                                                </div>
+
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </div>
+                                    <div id="slick-nav-2" class="products-slick-nav"></div>
+                                </div>
+                                <!-- /tab -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Products tab & slick -->
                 </div>
-                <div class="col-lg-4 offset-lg-1 col-md-6">
-                    <div class="footer__address">
-                        <ul>
-                            <li>
-                                <span>Llámanos:</span>
-                                <p>(+57) 313-301-1867</p>
-                            </li>
-                            <li>
-                                <span>Correo Electrónico:</span>
-                                <p>biblotecaplus@gmail .com</p>
-                            </li>
-                            <li>
-                                <span>Fax:</span>
-                                <p>(+57) 345-678-910</p>
-                            </li>
-                            <li>
-                                <span>Conectanos:</span>
-                                <div class="footer__social">
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /SECTION -->
+
+        <!-- SECTION -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                        <div class="section-title">
+                            <h4 class="title">Nuestros Clientes</h4>
+                            <div class="section-nav">
+                                <div id="slick-nav-3" class="products-slick-nav"></div>
+                            </div>
+                        </div>
+
+                        <div class="products-widget-slick" data-nav="#slick-nav-3">
+                            <asp:Repeater ID="Rep_Client" runat="server">
+                                <ItemTemplate>
+
+                                    <div>
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="./img/profile.png" alt="_5" id="_image5" itemprop="image" />
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Cliente</p>
+                                                <h3 class="product-name" itemprop="name"><a href="#"><%# Eval("Nombre") %></a></h3>
+                                                <h4 class="product-price">Nacionalidad: <del class="product-old-price" style="text-decoration: none;"><%# Eval("Nacionalidad") %></del></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-xs-6">
+                        <div class="section-title">
+                            <h4 class="title">Autores Más Comprados</h4>
+                            <div class="section-nav">
+                                <div id="slick-nav-4" class="products-slick-nav"></div>
+                            </div>
+                        </div>
+
+                        <div class="products-widget-slick" data-nav="#slick-nav-4">
+                            <asp:Repeater ID="Rep_Author" runat="server">
+                                <ItemTemplate>
+
+                                    <div>
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <asp:Image runat="server" ImageUrl='<%# Eval("Imagen") %>' itemprop="image" Style="width: 100%;" />
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Autor</p>
+                                                <h3 class="product-name" itemprop="name"><a href="#"><%# Eval("Nombre") %></a></h3>
+                                                <h4 class="product-price">Nacionalidad: <del class="product-old-price" style="text-decoration: none;"><%# Eval("Nacionalidad") %></del></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-sm visible-xs"></div>
+
+                    <div class="col-md-4 col-xs-6">
+                        <div class="section-title">
+                            <h4 class="title">Editoriales</h4>
+                            <div class="section-nav">
+                                <div id="slick-nav-5" class="products-slick-nav"></div>
+                            </div>
+                        </div>
+
+                        <div class="products-widget-slick" data-nav="#slick-nav-5">
+
+                            <asp:Repeater ID="Rep_Editorial" runat="server">
+                                <ItemTemplate>
+                                    <div>
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="./img/editorial.png" alt="_6" id="_image6" itemprop="image" />
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">EDITORIAL</p>
+                                                <h3 class="product-name" itemprop="name"><a href="#"><%# Eval("Nombre") %></a></h3>
+                                                <h4 class="product-price">Nacionalidad: <del class="product-old-price" style="text-decoration: none;"><%# Eval("Nacionalidad") %></del></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        d
+        <!-- /SECTION -->
+
+        <!-- NEWSLETTER -->
+        <div id="newsletter" class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="newsletter">
+                            <p>Regístrese para el <strong>BOLETIN INFORMATIVO</strong></p>
+                            <div style="padding: 10px">
+                                <input class="input" type="email" placeholder="Ingresa tu correo electronico" style="width: 25%; height: 33px; margin-right: 0px; border-radius: 40px 0px 0px 40px; vertical-align: middle;" />
+                                <button class="newsletter-btn" style="height: 40px; width: 100px; background: #D10024; color: #FFF; font-weight: 700; border: none; border-radius: 0px 40px 40px 0px; height: 32px; font-size: 11px;">
+                                    <i class="fa fa-envelope" style="padding-right: 7px;"></i>Subscribe</button>
+                            </div>
+                            <ul class="newsletter-follow">
+                                <li>
                                     <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6">
-                    <div class="footer__widget">
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Soporte</a></li>
-                            <li><a href="#">¿Como trabar con nosotros?</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla está hecha con <i class="fa fa-heart" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                        <div class="footer__copyright__links">
-                            <a href="#">Política de privacidad</a>
-                            <a href="#">Política de cookies</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                <!-- /row -->
             </div>
+            <!-- /container -->
         </div>
-    </footer>
-    <!-- Footer Section End -->
+        <!-- /NEWSLETTER -->
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.barfiller.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+        <!-- FOOTER -->
+        <footer id="footer">
+            <!-- top footer -->
+            <div class="section">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6" id="_address1" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress" itemref="_postalCode3">
+                            <div class="footer">
+                                <h3 class="footer-title">Sobre Nosotros</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                <ul class="footer-links">
+                                    <li><a href="#"><i class="fa fa-map-marker"></i><span id="_postalCode1" itemprop="postalCode">18001</span> - Florencia Caquetá <span itemprop="addressCountry">(Colombia)</span>, especificamente en la dirección <span itemprop="streetAddress">Cra 2F # 12-C35</span> <span itemprop="addressLocality">ABAS TURBAY</span> </a></li>
+                                    <li><a href="#"><i class="fa fa-phone"></i><span id="_telephone1" itemprop="telephone">3133011867</span></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o"></i><span id="_email1" itemprop="email">biblotecaplus@email.com</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="footer">
+                                <h3 class="footer-title">CATEGORIAS</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Las mejores ofertas</a></li>
+                                    <li><a href="#">Accesorios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-xs"></div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="footer">
+                                <h3 class="footer-title">INFORMACIÓN</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Sobre nosotros</a></li>
+                                    <li><a href="#">Contáctenos</a></li>
+                                    <li><a href="#">Política de privacidad</a></li>
+                                    <li><a href="#">Pedidos y Devoluciones</a></li>
+                                    <li><a href="#">Términos y condiciones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="footer">
+                                <h3 class="footer-title">Service</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Mi Cuenta</a></li>
+                                    <li><a href="#">Ver carrito</a></li>
+                                    <li><a href="#">Lista de deseos</a></li>
+                                    <li><a href="#">Seguimiento de mi pedido</a></li>
+                                    <li><a href="#">Ayuda</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /top footer -->
+
+            <!-- bottom footer -->
+            <div id="bottom-footer" class="section">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <ul class="footer-payments">
+                                <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+                                <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+                            </ul>
+                            <span class="copyright">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                Todos los derechos reservados | Esta plantilla está hecha <i class="fa fa-heart-o" aria-hidden="true"></i>por <a href="https://colorlib.com" target="_blank" style="color: yellow;">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </span>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /bottom footer -->
+        </footer>
+        <!-- /FOOTER -->
+
+        <!-- jQuery Plugins -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/jquery.zoom.min.js"></script>
+        <script src="js/main.js"></script>
+    </form>
 </body>
-
-
-   <!-- <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>-->
-
 </html>

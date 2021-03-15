@@ -6,134 +6,262 @@ namespace LibraryOntology.Data
 {
     public class Connection
     {
-        //private static string baseURL = @"http://localhost:3030/ontofrutis/data";
+        private static readonly string URL_SPARQL = @"http://localhost:3030/BiblotecaPlu/sparql";
 
-
-
-        private static string baseURL = @"http://localhost:3030/proyectoFinalPeliculas/sparql";
-
-
-        //private static string baseURL = @"http://dbpedia.org/sparql";
-
-        public Connection()
-        {
-            // Vanessa De Blass
-        }
-        /*
-        public DataTable ConsultarDatosGenerales(string variable, string valor)
-        {
-            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                                PREFIX data: <http://localhost:3030/dependencias/data#>
-                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-                                SELECT ?dependencia ?nombre ?funcion ?ubicacion
-                                WHERE {
-  	                                ?dependencia data:nombre ?nombre.
-  	                                ?dependencia data:funcion ?funcion.
-  	                                ?dependencia data:ubicacion ?ubicacion.
-  	                                FILTER regex(?" + variable + ", '" + valor + "', 'i')} ";
-            return EjecutarConsulta(consulta);
-        }*/
-        public DataTable ConsultarGeneral()
+        public DataTable GetAllBooks()
         {
             string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                                 PREFIX owl: <http://www.w3.org/2002/07/owl#>
                                 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-                                PREFIX data: <http://www.semanticweb.org/sebastianobregon/ontologies/2020/8/untitled-ontology-5#>
-                                    SELECT ?Pelicula ?Imagen ?Nombre ?Duracion ?Sinopsis ?Puntuacion ?Genero ?Tipo
-                                    WHERE{
-                                        ?Pelicula data:Imagen ?Imagen.
-                                        ?Pelicula data:Puntuacion ?Puntuacion.
-                                        ?Pelicula data:Nombre ?Nombre.
-                                        ?Pelicula data:Duracion ?Duracion.
-                                        ?Pelicula data:Sinopsis ?Sinopsis.
-                                        ?Pelicula data:tiene_un ?Genero.
-                                    }";
-            return EjecutarConsulta(consulta);
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Imagen ?Tipo  
+                                WHERE{ 
+	                                ?Libro data:Nombre ?Nombre.
+	                                ?Libro data:Puntuacion ?Puntuacion.
+	                                ?Libro data:Paginas ?Paginas.
+	                                ?Libro data:Sipnosis ?Sipnosis.
+	                                ?Libro data:Imagen ?Imagen.
+	                                ?Libro data:tiene_un ?Genero.
+	                                ?Genero data:Tipo ?Tipo .
+                                }";
+            return ExecuteQuery(consulta);
         }
 
-        public DataTable ConsultarPelicula(string termino, string tipo)
+        public DataTable GetAllAuthor()
         {
             string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                                 PREFIX owl: <http://www.w3.org/2002/07/owl#>
                                 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-                                PREFIX data: <http://www.semanticweb.org/sebastianobregon/ontologies/2020/8/untitled-ontology-5#>
-                                    SELECT ?Imagen ?Nombre ?Duracion ?Sinopsis ?Puntuacion
-                                    WHERE{
-                                        ?Pelicula data:Imagen ?Imagen.
-                                        ?Pelicula data:Puntuacion ?Puntuacion.
-                                        ?Pelicula data:Nombre ?Nombre.
-                                        ?Pelicula data:Duracion ?Duracion.
-                                        ?Pelicula data:Sinopsis ?Sinopsis.
-                                        FILTER regex(?" + tipo + ", '" + termino + "')}";
-            return EjecutarConsulta(consulta);
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Nombre ?Nacionalidad ?Edad ?Imagen
+                                WHERE{
+                                    ?Libro data:es_escrito_por ?Autor.
+                                    ?Autor data:Nombre ?Nombre.
+                                    ?Autor data:Nacionalidad ?Nacionalidad.
+                                    ?Autor data:Edad ?Edad.
+                                    ?Autor data:Imagen ?Imagen.
+                               }";
+            return ExecuteQuery(consulta);
         }
 
-
-        public DataTable GetSubdependencias(string nombre)
+        public DataTable GetThreeAuthor()
         {
-            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri(baseURL));
             string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                                PREFIX data: <http://localhost:3030/dependencias/data#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
                                 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-                                SELECT ?padre ?nombre_padre ?hijo ?nombre_hijo ?funcion ?ubicacion
-                                WHERE {
-                                  ?padre data:divide_en ?hijo.
-                                  ?padre data:nombre ?nombre_padre.
-                                  ?hijo data:nombre ?nombre_hijo.
-                                  ?hijo data:funcion ?funcion.
-                                  ?hijo data:ubicacion ?ubicacion.
-                                  FILTER regex(?nombre_padre, '" + nombre + "', 'i').}";
-            return EjecutarConsulta(consulta);
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Libro ?Autor ?Nombre ?Nacionalidad ?Edad ?Imagen
+                                WHERE{
+                                    ?Libro data:es_escrito_por ?Autor.
+                                    ?Autor data:Nombre ?Nombre.
+                                    ?Autor data:Nacionalidad ?Nacionalidad.
+                                    ?Autor data:Edad ?Edad.
+                                    ?Autor data:Imagen ?Imagen.
+                               }
+                                ORDER BY ?Edad
+                                LIMIT 3";
+            return ExecuteQuery(consulta);
         }
 
-        public DataTable GetDependenciaPadre(string nombre)
+        public DataTable GetAllClientBooks()
         {
-            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri(baseURL));
             string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                                 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                                PREFIX data: <http://localhost:3030/dependencias/data#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
                                 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-                                SELECT ?hijo ?nombre_hijo ?padre ?nombre_padre ?funcion ?ubicacion
-                                WHERE {
-                                  ?padre data:divide_en ?hijo.
-                                  ?padre data:nombre ?nombre_padre.
-                                  ?hijo data:nombre ?nombre_hijo.
-                                  ?padre data:funcion ?funcion.
-                                  ?padre data:ubicacion ?ubicacion.
-                                FILTER regex(?nombre_hijo, '" + nombre + "', 'i').}";
-            return EjecutarConsulta(consulta);
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Nombre ?Nacionalidad ?Edad
+                                WHERE{
+                                    ?Libro data:se_presta_a ?Usuario.
+                                    ?Usuario data:Nombre ?Nombre.
+                                    ?Usuario data:Nacionalidad ?Nacionalidad.
+                                    ?Usuario data:Edad ?Edad.
+                               }";
+            return ExecuteQuery(consulta);
         }
 
-        public DataTable EjecutarConsulta(string query)
+        public DataTable GetBooksBySynopsis(string word)
         {
-            //try {
-            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri(baseURL));
-            SparqlResultSet srs = endpoint.QueryWithResultSet(query);
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Libro ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Genero ?Tipo ?Imagen
+                                WHERE{
+                                    ?Libro data:Nombre ?Nombre.
+                                    ?Libro data:Puntuacion ?Puntuacion.
+                                    ?Libro data:Paginas ?Paginas.
+                                    ?Libro data:Sipnosis ?Sipnosis.
+                                    ?Libro data:Imagen ?Imagen.
+                                    ?Libro data:tiene_un ?Genero.
+                                    ?Genero data:Tipo ?Tipo .
+                                FILTER regex(?Sipnosis,'" + word + "') }";
+            return ExecuteQuery(consulta);
+        }
 
-            DataTable dt = new DataTable();
-            var columnas = srs.Variables;
-            foreach (string s in columnas)
+        public DataTable GetBooksByName(string word)
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Libro ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Genero ?Tipo ?Imagen
+                                WHERE{
+                                    ?Libro data:Nombre ?Nombre.
+                                    ?Libro data:Puntuacion ?Puntuacion.
+                                    ?Libro data:Paginas ?Paginas.
+                                    ?Libro data:Sipnosis ?Sipnosis.
+                                    ?Libro data:Imagen ?Imagen.
+                                    ?Libro data:tiene_un ?Genero.
+                                    ?Genero data:Tipo ?Tipo .
+                                FILTER regex(?Nombre,'" + word + "') }";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable GetBooksByProproperty(string proproperty, string word)
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                            PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                            SELECT ?Libro ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Genero ?Tipo ?Imagen
+                            WHERE{
+                                ?Libro data:Nombre ?Nombre.
+                                ?Libro data:Puntuacion ?Puntuacion.
+                                ?Libro data:Paginas ?Paginas.
+                                ?Libro data:Sipnosis ?Sipnosis.
+                                ?Libro data:Imagen ?Imagen.
+                                ?Libro data:tiene_un ?Genero.
+                                ?Genero data:Tipo ?Tipo .
+                          FILTER regex(?" + proproperty + ", '" + word + "')}";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable GetAllLiteraryGenre()
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT DISTINCT ?Tipo
+                                WHERE{
+                                    ?Libro data:tiene_un ?Genero.
+                                    ?Genero data:Tipo ?Tipo .
+                                }";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable GetBestBook()
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Tipo ?Imagen
+                                WHERE{
+                                    ?Libro data:Nombre ?Nombre.
+                                    ?Libro data:Puntuacion ?Puntuacion.
+                                    ?Libro data:Paginas ?Paginas.
+                                    ?Libro data:Sipnosis ?Sipnosis.
+                                    ?Libro data:Imagen ?Imagen.
+                                    ?Libro data:tiene_un ?Genero.
+                                    ?Genero data:Tipo ?Tipo . 
+                                }
+                                ORDER BY DESC(?Puntuacion)
+                                LIMIT 1";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable GetAllEditorial()
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Nombre ?Nacionalidad ?year
+                                WHERE{
+                                ?Libro data:es_publicada_por ?Editorial.
+                                ?Editorial data:Nombre ?Nombre.
+                                ?Editorial data:Nacionalidad ?Nacionalidad.
+                                ?Editorial data:Año ?year.
+                                }
+                                ORDER BY DESC(?year)";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable GetAllBestSellers()
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Tipo ?Imagen
+                                WHERE{
+                                    ?Libro data:Nombre ?Nombre.
+                                    ?Libro data:Puntuacion ?Puntuacion.
+                                    ?Libro data:Paginas ?Paginas.
+                                    ?Libro data:Sipnosis ?Sipnosis.
+                                    ?Libro data:Imagen ?Imagen.
+                                    ?Libro data:tiene_un ?Genero.
+                                    ?Genero data:Tipo ?Tipo . 
+                                }
+                                ORDER BY DESC(?Puntuacion)";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable GetBooksByLiteraryGenre(string name)
+        {
+            string consulta = @"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                                PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                                PREFIX data: <http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#>
+                                SELECT ?Libro ?Nombre ?Puntuacion ?Paginas ?Sipnosis ?Imagen ?Genero ?Tipo
+                                WHERE{
+                                    ?Libro data:Nombre ?Nombre.
+                                    ?Libro data:Puntuacion ?Puntuacion.
+                                    ?Libro data:Paginas ?Paginas.
+                                    ?Libro data:Sipnosis ?Sipnosis.
+                                    ?Libro data:Imagen ?Imagen.
+                                    ?Libro data:tiene_un ?Genero.
+                                    ?Genero data:Tipo ?Tipo .
+                               FILTER regex(?Tipo,'" + name + "') }";
+            return ExecuteQuery(consulta);
+        }
+
+        public DataTable ExecuteQuery(string query)
+        {
+            SparqlRemoteEndpoint endPoint = new SparqlRemoteEndpoint(new Uri(URL_SPARQL));
+            SparqlResultSet setResult = endPoint.QueryWithResultSet(query);
+
+            DataTable dataTable = new DataTable();
+            var columns = setResult.Variables;
+            foreach (string s in columns)
             {
-                dt.Columns.Add(new DataColumn(s, typeof(string)));
+                dataTable.Columns.Add(new DataColumn(s, typeof(string)));
             }
 
-            foreach (var item in srs.Results)
+            foreach (var value in setResult.Results)
             {
-                DataRow dr = dt.NewRow();
-                foreach (var resutado in item)
+                DataRow dateRow = dataTable.NewRow();
+                foreach (var replay in value)
                 {
-                    dr[resutado.Key] = resutado.Value;
+                    dateRow[replay.Key] = replay.Value;
                 }
-                dt.Rows.Add(dr);
+                dataTable.Rows.Add(dateRow);
             }
-            //}catch(Exception ex) {
-            //    return null;
-            //}
-            return dt;
+
+            return dataTable;
         }
     }
 }
