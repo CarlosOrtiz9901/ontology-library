@@ -23,5 +23,5 @@ Cd: Fuseki/run/shiro.ini
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/CarlosOrtiz9901/SIG2/main/Public/img1.jpeg" width="700" alt="img" />
+  <img src="https://raw.githubusercontent.com/CarlosOrtiz9901/ontology-library/main/Public/img1.png" width="700" alt="img" />
 </p>
