@@ -6,7 +6,7 @@ namespace LibraryOntology.Data
 {
     public class Connection
     {
-        private static readonly string URL_SPARQL = @"http://localhost:3030/BiblotecaPlus/sparql";
+        private static readonly string URL_SPARQL = @"http://localhost:3030/BiblotecaPlu/sparql";
 
         public DataTable GetAllBooks()
         {
