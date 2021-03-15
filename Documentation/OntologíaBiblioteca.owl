@@ -1,0 +1,1433 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Caracteriza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Caracteriza">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_caracteriza_por_ser"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Escribe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Escribe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_escrito_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Presta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Presta">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_presta_a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publica">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_publico_en"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publicada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publicada">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_publicada_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#da_inicio_A -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#da_inicio_A">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_origina_De"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_apta_para -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_apta_para">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#puede_leer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_escrito_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_escrito_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_publicada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_publicada_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_realizado_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#es_realizado_por">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_realiza"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#le_pertenece_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#le_pertenece_a">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tiene_un"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#puede_leer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#puede_leer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#realiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#realiza">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_realiza_en"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_caracteriza_por_ser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_caracteriza_por_ser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_origina_De -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_origina_De">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_presta_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_presta_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_publico_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_publico_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_realiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_realiza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_realiza_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#se_realiza_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tendra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tendra">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tendra_un"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tuvo_un"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tendra_un -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tendra_un">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tiene_un -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tiene_un">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tuvo_un -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#tuvo_un">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Año -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Año">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Celular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Celular">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Dia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Dia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Dimensiones -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Dimensiones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Fallecimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Fallecimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Nacimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Hora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Hora">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#ISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#ISBN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Idioma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Idioma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Imagen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Imagen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Material">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Mes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Mes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Nacionalidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Nacionalidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Paginas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Paginas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Peso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Peso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Puntuacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Puntuacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Sipnosis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Sipnosis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Tematica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Tematica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Tipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Exhibicion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Exhibicion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Firma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Firma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Evento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</Edad>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</Fecha_Nacimiento>
+        <Imagen>https://upload.wikimedia.org/wikipedia/commons/3/32/Mario_Mendoza.jpg</Imagen>
+        <Nacionalidad>Colombiano</Nacionalidad>
+        <Nombre>Mario Mendoza</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</Edad>
+        <Fecha_Fallecimiento>456 a.c</Fecha_Fallecimiento>
+        <Fecha_Nacimiento>525 a.c</Fecha_Nacimiento>
+        <Imagen>https://static.wikia.nocookie.net/literatura/images/a/a8/Esquilo.jpg/revision/latest?cb=20120113005314&amp;path-prefix=es</Imagen>
+        <Nacionalidad>Griego</Nacionalidad>
+        <Nombre>Esquilo</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</Edad>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1965</Fecha_Nacimiento>
+        <Imagen>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elle-jk-rowling-nuevo-libro-infantil-online-gratuito-1590513647.jpg?crop=0.668xw:1.00xh;0.134xw,0&amp;resize=980:*</Imagen>
+        <Nacionalidad>Britanica</Nacionalidad>
+        <Nombre>Joanne K. Rowling</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</Edad>
+        <Fecha_Fallecimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</Fecha_Fallecimiento>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1343</Fecha_Nacimiento>
+        <Imagen>https://personajeshistoricos.com/wp-content/uploads/2018/05/Geoffrey-Chaucer-2.png</Imagen>
+        <Nacionalidad>Londinense</Nacionalidad>
+        <Nombre>Geoffrey Chaucer</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</Edad>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1943</Fecha_Nacimiento>
+        <Imagen>https://www.poemas-del-alma.com/blog/wp-content/uploads/2013/07/eduardo-mendoza.jpg</Imagen>
+        <Nacionalidad>Española</Nacionalidad>
+        <Nombre>Eduardo Mendoza Garriga</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1947</Fecha_Nacimiento>
+        <Imagen>https://pbs.twimg.com/profile_images/472421066007015424/MHUJj15g_400x400.jpeg</Imagen>
+        <Nacionalidad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</Nacionalidad>
+        <Nacionalidad>Estaunidense - Japones</Nacionalidad>
+        <Nombre>Robert Toru Kiyosaki</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</Edad>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1954</Fecha_Nacimiento>
+        <Imagen>https://audvisor.com/wp-content/uploads/2019/08/Sharon-Lechter.png</Imagen>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Nombre>Sharon L. Lechter</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor"/>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</Edad>
+        <Fecha_Nacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1963</Fecha_Nacimiento>
+        <Imagen>https://prabook.com/web/show-photo-icon.jpg?id=1497565&amp;width=220&amp;cache=false</Imagen>
+        <Nacionalidad>Británica</Nacionalidad>
+        <Nombre>Erika Leonard Mitchell</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1986</Año>
+        <Nacionalidad>Londres</Nacionalidad>
+        <Nombre>Bloomsburry Publishing</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1911</Año>
+        <Nacionalidad>Barcelona</Nacionalidad>
+        <Nombre>Seix Barral</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1923</Año>
+        <Nacionalidad>Madrid</Nacionalidad>
+        <Nombre>Aguilar</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1954</Año>
+        <Nacionalidad>Nueva York</Nacionalidad>
+        <Nombre>Vintage Books</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</Año>
+        <Nacionalidad>Española</Nacionalidad>
+        <Nombre>Planeta</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</Año>
+        <Nacionalidad>Madrid , Comunidad de Madrid</Nacionalidad>
+        <Nombre>Tech Press (Tecnifood y Guía de la Tecnología Alimentaria)</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1910</Año>
+        <Nacionalidad>Española</Nacionalidad>
+        <Nombre>Bruguera</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+        <Tipo>Antigua</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+        <Tipo>Edad Media</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca"/>
+        <Tipo>Edad Contemporanea</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Exhibicion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Exhibicion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Exhibicion"/>
+        <Hora>08:00:00</Hora>
+        <Tipo>Feria del Libro</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2021</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">01</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2021</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">03</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2021</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">05</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">07</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2021</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">06</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">06</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">07</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#string">458 a.c</Año>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1979</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">04</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</Año>
+        <Idioma rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</Idioma>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">03</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</Año>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion"/>
+        <Año rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1387</Año>
+        <Dia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</Dia>
+        <Mes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">03</Mes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Firma1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Firma1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Firma"/>
+        <Hora>14:00:00 a 16:00:00</Hora>
+        <Nombre>Autografos</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Ficcion</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Romance</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Comica</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Misterio</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Novela</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Autoayuda</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Erotica</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Tragedia</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero"/>
+        <Tipo>Poesia</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura"/>
+        <Hora>10:00:00</Hora>
+        <Tipo>Infantil</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura"/>
+        <Tipo>14:30:00</Tipo>
+        <Tipo>Historia</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura"/>
+        <Hora>15:00:00</Hora>
+        <Tipo>Contemporanea</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor5"/>
+        <es_publicada_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial2"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca2"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen4"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion4"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero3"/>
+        <Dimensiones>5.04 x 0.59 x 7.4 pulgadas</Dimensiones>
+        <Idioma>Castellano</Idioma>
+        <Imagen>http://4.bp.blogspot.com/_vSrbCxDEWeE/TSLuiQPXxiI/AAAAAAAABRg/mKUeh1qnAw8/s1600/elmisteriodelacriptaem.jpg</Imagen>
+        <Material>Tapa Blanda</Material>
+        <Nombre>El Misterio de la Cripta Embrujada</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">205</Paginas>
+        <Peso rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</Peso>
+        <Puntuacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.1</Puntuacion>
+        <Sipnosis>Si ayuda a resolver el caso, se ganará la libertad.</Sipnosis>
+        <Tematica>Misterio
+Policiaca</Tematica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor6"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor7"/>
+        <es_publicada_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial6"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca3"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen1"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion6"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero6"/>
+        <Dimensiones>23 cm x 15 cm x 2.2 cm</Dimensiones>
+        <Idioma>Ingles</Idioma>
+        <Imagen>https://http2.mlstatic.com/D_NQ_NP_622626-MCO44703424462_012021-O.webp</Imagen>
+        <Material>Rustico</Material>
+        <Nombre>Padre Rico, Padre Pobre</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207</Paginas>
+        <Peso>50gr</Peso>
+        <Puntuacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.47</Puntuacion>
+        <Sipnosis>No consiste en permanecer toda la vida dentro del mundo laboral, sino que buscan conquistar la autonomía financiera</Sipnosis>
+        <Tematica>Libertad financiera</Tematica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico4"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor3"/>
+        <es_publicada_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial1"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca3"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen2"/>
+        <se_presta_a rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario2"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion2"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero5"/>
+        <Dimensiones>15.2 cm x 15.8 cm x 15.8 cm</Dimensiones>
+        <Idioma>English</Idioma>
+        <Imagen>https://images-na.ssl-images-amazon.com/images/I/51jyI6lYi1L._SX342_BO1,204,203,200_.jpg</Imagen>
+        <Material>Rústica</Material>
+        <Nombre>Harry Potter y las reliquias de la Muerte</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">758</Paginas>
+        <Peso>82gr</Peso>
+        <Puntuacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</Puntuacion>
+        <Sipnosis>Este curso Harry Potter no podrá ir a Hogwarts. Tiene una tarea más importante para el mundo mágico: la de localizar y destruir todos los Horrocruxes.</Sipnosis>
+        <Tematica>Magia en Harry Potter</Tematica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico2"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor8"/>
+        <es_publicada_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial4"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca3"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen5"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion1"/>
+        <se_realiza_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento1"/>
+        <tendra_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Lectura2"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero2"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero7"/>
+        <Dimensiones>5.17 x 1.12 x 7.95 pulgadas</Dimensiones>
+        <Idioma>Ingles</Idioma>
+        <Imagen>https://upload.wikimedia.org/wikipedia/commons/0/09/Shades_of_Grey_-_Geheimes_Verlangen_%28E._L._James%2C_2012%29.jpg</Imagen>
+        <Material>Tapa blanda</Material>
+        <Nombre>Cincuenta sombras de Grey</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</Paginas>
+        <Peso>70gr</Peso>
+        <Puntuacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.2</Puntuacion>
+        <Sipnosis>Cuando la estudiante de literatura Anastasia Steele recibe el encargo de entrevistar al exitoso y joven empresario Christian Grey.</Sipnosis>
+        <Tematica>Tetralogía de Cincuenta Sombras</Tematica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor1"/>
+        <es_publicada_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial5"/>
+        <es_realizado_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor1"/>
+        <realiza rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Evento4"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca3"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen2"/>
+        <se_presta_a rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario1"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion5"/>
+        <se_realiza_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Firma1"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero1"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero4"/>
+        <Dimensiones>23 cm x 15 cm x 2.5 cm</Dimensiones>
+        <Idioma>Español</Idioma>
+        <Imagen>https://storage.googleapis.com/catalogo-libros/extralarge/9225a2aa-0cf2-7f4c-7d4e-5c9d4785cf8c_imagen.jpg</Imagen>
+        <Material>Rústica</Material>
+        <Nombre>Akelarre</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">416</Paginas>
+        <Peso>50grs</Peso>
+        <Puntuacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.08</Puntuacion>
+        <Sipnosis>Lo alcanza su pasado, con una cuenta de cobro, cuando la policía le solicita su asesoría por unos extraños asesinatos.</Sipnosis>
+        <Tematica>Novela literaria  | General narrativa literaria</Tematica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor2"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca1"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen4"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion3"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero8"/>
+        <Idioma>Griego Antiguo</Idioma>
+        <Imagen>https://www.editorialjuventud.es/wp-content/uploads/2018/08/1698.jpg</Imagen>
+        <Nombre>Orestíada</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</Paginas>
+        <Sipnosis>Trata del final de la maldición de la casa de Atreo.</Sipnosis>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Libro"/>
+        <es_apta_para rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico4"/>
+        <es_escrito_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Autor4"/>
+        <es_publicada_por rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Editorial7"/>
+        <se_caracteriza_por_ser rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Epoca2"/>
+        <se_origina_De rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen1"/>
+        <se_presta_a rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario4"/>
+        <se_publico_en rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Fecha_Publicacion7"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero1"/>
+        <tiene_un rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Genero9"/>
+        <Idioma>Ingles</Idioma>
+        <Imagen>http://image.casadellibro.com/libros/0/los-cuentos-de-canterbury-9789500398008.jpg</Imagen>
+        <Nombre>Los cuentos de Canterbury</Nombre>
+        <Paginas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">556</Paginas>
+        <Puntuacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Puntuacion>
+        <Sipnosis>El dueño de la posada es Harry Bailey, y es quien inicia el reto o concurso literario. Un grupo de treinta y tres peregrinos tiene por objetivo llegar a Canterbury, ninguno se conoce y todos han planeado su viaje de manera solitaria. Es entonces cuando Harry Bailey les propone viajar juntos, incluyéndolo a él.</Sipnosis>
+        <Tematica>Amor, Sexo, Humor, Religión, Mitología, Caballería, Matrimonio, Música</Tematica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <Tipo>Historia Real</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <Tipo>Fantasia</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <Tipo>Live Action</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <Tipo>Emociones</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Origen"/>
+        <Tipo>Fanfiction</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <Edad>Menores de 13</Edad>
+        <Tipo>Infantil</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <Edad>Menores a 18 años</Edad>
+        <Tipo>Juvenil</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <Edad>Mayores a 18 años</Edad>
+        <Tipo>Adultos</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Publico"/>
+        <Edad>Todas las edades</Edad>
+        <Tipo>Familiar</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller"/>
+        <Hora>08:00:00</Hora>
+        <Tipo>Linguistica</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller"/>
+        <Hora>14:30:00</Hora>
+        <Tipo>Diseño y Activimos</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Taller"/>
+        <Hora>15:15:00</Hora>
+        <Tipo>Infantil Sonoridades</Tipo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <Celular rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3203366569</Celular>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</Edad>
+        <Email xml:lang="hotmail.com">camilo12</Email>
+        <Nombre>Camilo Garcia</Nombre>
+        <Nombre>Colombiano</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <Celular rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3152654585</Celular>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</Edad>
+        <Email xml:lang="gmail.com">andres</Email>
+        <Nacionalidad>Colombiana</Nacionalidad>
+        <Nombre>Andres Torres</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <Celular rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3154789632</Celular>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</Edad>
+        <Email xml:lang="gmail.com">Danna_58</Email>
+        <Nacionalidad>Mexicano</Nacionalidad>
+        <Nombre>Danna Molina</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <Celular rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3005462514</Celular>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</Edad>
+        <Email xml:lang="hotmail.com">EmilyPerdomo</Email>
+        <Nacionalidad>Colombiano</Nacionalidad>
+        <Nombre>Emily Sofia Perdomo</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lizethycarlos/ontologies/2021/2/untitled-ontology-8#Usuario"/>
+        <Celular rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3165897412</Celular>
+        <Edad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</Edad>
+        <Email xml:lang="hotmail.com">sebastiantorres123</Email>
+        <Nacionalidad>Colombiano</Nacionalidad>
+        <Nombre>Sebastian Torres</Nombre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
